@@ -1,0 +1,25 @@
+imno='6'
+I = imread('./test5/5_LayColor.png');
+figure,imshow(I)
+[h,w,ch]=size(I);
+newSize = 256;
+if h<w
+aspect = h/w;
+wnew = 256/aspect;
+Ir = imresize(I,[256,wnew],'nearest');
+centerH = 128;
+centerW = wnew/2;
+Inew = Ir(:, centerW - 128 + 1 : centerW + 128, :);
+imwrite(Inew, './test5/5.png');
+%figure,imshow(Inew)
+else
+aspect = h/w;
+hnew = 256*aspect;
+Ir = imresize(I,[hnew,256],'nearest');
+figure,imshow(Ir)
+centerW = 128;
+centerH = hnew/2;
+Inew = Ir(centerH - 128 + 1 : centerH + 128, :, :);
+imwrite(Inew, './test5/5.png');
+%figure,imshow(Inew)
+end

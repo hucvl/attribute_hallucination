@@ -1,0 +1,62 @@
+imno = '1'
+colors = load('../color150.mat');
+colors = colors.colors;
+Icolor = imread(['./test' imno '/' imno '_LayColor.png']);
+Icolor256 = imread(['./test' imno '/' imno '.png']);
+[h,w,ch]=size(Icolor);
+Igray = zeros(h,w);
+R = zeros(h,w);
+G = zeros(h,w);
+B = zeros(h,w);
+
+Igray256 = zeros(256,256);
+R256 = zeros(256,256);
+G256 = zeros(256,256);
+B256 = zeros(256,256);
+Icolornew = zeros(h,w,3);
+imcolors = reshape(Icolor(:),[h*w 3]);
+Icolornew256 = zeros(256,256,3);
+imcolors256 = reshape(Icolor256(:),[256*256 3]);
+%imcolors = unique(imcolors,'rows');
+for i=1:length(colors)
+i
+mask = bsxfun(@eq, colors(i,:),imcolors );
+mask = mask(:,1) & mask(:,2) & mask(:,3);
+mask2d = reshape(mask, [h, w]);
+Igray(mask2d) = i;
+
+R(mask2d) = colors(i,1);
+G(mask2d) = colors(i,2);
+B(mask2d) = colors(i,3);
+
+mask256 = bsxfun(@eq, colors(i,:),imcolors256 );
+mask256 = mask256(:,1) & mask256(:,2) & mask256(:,3);
+mask2d256 = reshape(mask256, [256, 256]);
+Igray256(mask2d256) = i;
+
+R256(mask2d256) = colors(i,1);
+G256(mask2d256) = colors(i,2);
+B256(mask2d256) = colors(i,3);
+end
+%figure,imshow(uint8(mask2d))
+imwrite(uint8(Igray), ['./test' imno '/content_grayseg.png']);
+imwrite(uint8(cat(3,R,G,B)), ['./test' imno '/content_seg.png']);
+imwrite(uint8(Igray256), ['./test' imno '/style_grayseg.png']);
+imwrite(uint8(cat(3,R256,G256,B256)), ['./test' imno '/style_seg.png']);
+
+% Igray = imread('./test11/11_LayGray.png');
+% R = zeros(h,w);
+% G = zeros(h,w);
+% B = zeros(h,w);
+% for i=1:length(colors)
+% i
+% mask2d = Igray == i;
+% 
+% 
+% R(mask2d) = colors(i,1);
+% G(mask2d) = colors(i,2);
+% B(mask2d) = colors(i,3);
+% end
+% imwrite(uint8(cat(3,R,G,B)), './test11/11_LayColor.png');
+
+
