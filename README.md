@@ -7,7 +7,7 @@
 </p>
 
 This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ][ ] (Accepted for publication in ACM Transactions on Graphics, 2019)
-See our [ website ]([I'm an inline-style link with title](https://www.google.com "Project Page") "Project Page") for more information about the model!
+See our [ website ](https://hucvl.github.io/attribute_hallucination/)  for more information about the model!
 
 <div align="center">
   <img src="https://hucvl.github.io/attribute_hallucination/images/teaser.jpg" style="float:left" width="100%">
