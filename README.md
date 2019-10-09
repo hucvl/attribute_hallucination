@@ -1,12 +1,9 @@
-# attribute_hallucination
-
-
 # Manipulating Attributes of Natural Scenes via Hallucination
 <p align="center">
   <b>Levent Karacan, Zeynep Akata, Aykut Erdem, Erkut Erdem</b></span>
 </p>
 
-This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ][ ] (Accepted for publication in ACM Transactions on Graphics, 2019)
+This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ](#) (Accepted for publication in ACM Transactions on Graphics, 2019)
 See our [ website ](https://hucvl.github.io/attribute_hallucination/)  for more information about the model!
 
 <div align="center">
