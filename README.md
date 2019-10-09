@@ -3,7 +3,7 @@
   <b>Levent Karacan, Zeynep Akata, Aykut Erdem, Erkut Erdem</b></span>
 </p>
 
-This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ](#) (Accepted for publication in ACM Transactions on Graphics, 2019)
+This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ](#) (Accepted for publication in ACM Transactions on Graphics, 2019).
 See our [ website ](https://hucvl.github.io/attribute_hallucination/)  for more information about the model!
 
 <div align="center">
@@ -29,8 +29,7 @@ month={},}
 - Linux or OSX
 - NVIDIA GPU + CUDA
 - We tested our code on python2.7 and python3.6
-- You need to install Tkinter module for your python version.
-
+- You need to install Tkinter module to use interactive scene editing tool.
 ## Coarse Model Training
 
 python train_coarse.py --img_root ./data/ADE20K_TA_Dataset/  --save_filename ./model/sgn_coarse --scene_parsing_model_path ./sceneparsing/resnet34_dilated8/ --batch_size 16  --num_epoch 100
@@ -50,6 +49,8 @@ python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/sgn_enh
 
 
 ## Interactive Scene Editing Demo
-Download semantic_segmentation_pytorch, fastphoto, photorealism, WCT2
+- Install Tkinter module.
+- Download semantic_segmentation_pytorch, fastphoto, photorealism, WCT2
+
 cd editing_tool
 python main.py --model_path ./pretrained_models/sgn_enhancer_G_latest --isEnhancer --image_size 512
