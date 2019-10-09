@@ -28,7 +28,8 @@ month={},}
 ## Requirements
 - Linux or OSX
 - NVIDIA GPU + CUDA
-- We tested our code on python2.7 and pyth
+- We tested our code on python2.7 and python3.6
+- You need to install Tkinter module for your python version.
 
 ## Coarse Model Training
 
