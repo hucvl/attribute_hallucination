@@ -30,6 +30,15 @@ month={},}
 - NVIDIA GPU + CUDA
 - We tested our code on python2.7 and python3.6
 - You need to install Tkinter module to use interactive scene editing tool.
+
+## Dataset
+- We arranged dataset from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transiet Attributes](http://transattr.cs.brown.edu/) datasets.
+- You can the download dataset from this [link](#)
+- Please cite the following works if you use this dataset.
+-- [Transient Attributes for High-Level Understanding and Editing of Outdoor Scenes](http://transattr.cs.brown.edu/)
+-- [Scene Parsing through ADE20K Dataset](https://groups.csail.mit.edu/vision/datasets/ADE20K/)
+
+
 ## Coarse Model Training
 
 python train_coarse.py --img_root ./data/ADE20K_TA_Dataset/  --save_filename ./model/sgn_coarse --scene_parsing_model_path ./sceneparsing/resnet34_dilated8/ --batch_size 16  --num_epoch 100
