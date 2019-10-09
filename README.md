@@ -26,8 +26,9 @@ month={},}
 
 
 ## Requirements
-- We tested our code on python2.7 and python3.6
-- See [`requirements.txt`](requirements.txt) for the required python packages and run `pip install -r requirements.txt` to install them.
+- Linux or OSX
+- NVIDIA GPU + CUDA
+- We tested our code on python2.7 and pyth
 
 ## Coarse Model Training
 
@@ -40,11 +41,11 @@ python train_enhancer.py --img_root ./data/ADE20K_TA_Dataset/ --coarse_model ./m
 
 ## Test Coarse Model
 
-python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/SGN/sgn_coarse_G_latest --save_dir ./results
+python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/sgn_coarse_G_latest --save_dir ./results
 
 ## Test Enhancer Model
 
-python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/SGN/sgn_enhancer_G_latest --save_dir ./resultsHD --isEnhancer
+python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/sgn_enhancer_G_latest --save_dir ./resultsHD --isEnhancer
 
 
 ## Interactive Scene Editing Demo
