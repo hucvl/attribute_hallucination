@@ -6,8 +6,8 @@
   <b>Levent Karacan, Zeynep Akata, Aykut Erdem, Erkut Erdem</b></span>
 </p>
 
-This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ] (Accepted for publication in ACM Transactions on Graphics, 2019)
-See our [ website ] [ https://hucvl.github.io/attribute_hallucination/ ]  for more information about the model!
+This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ][ ] (Accepted for publication in ACM Transactions on Graphics, 2019)
+See our [ website ]([I'm an inline-style link with title](https://www.google.com "Project Page") "Project Page") for more information about the model!
 
 <div align="center">
   <img src="https://hucvl.github.io/attribute_hallucination/images/teaser.jpg" style="float:left" width="100%">
@@ -35,20 +35,20 @@ month={},}
 
 # Coarse Model Training
 
-python3 train_coarse.py --img_root ./data/ADE20K_TA_Dataset/  --save_filename ./model/sgn_coarse --scene_parsing_model_path ./sceneparsing/resnet34_dilated8/ --batch_size 16  --num_epoch 100
+python train_coarse.py --img_root ./data/ADE20K_TA_Dataset/  --save_filename ./model/sgn_coarse --scene_parsing_model_path ./sceneparsing/resnet34_dilated8/ --batch_size 16  --num_epoch 100
 
 # Enhancer Model Training
 
-python3 train_enhancer.py --img_root ./data/ADE20K_TA_Dataset/ --coarse_model ./model/sgn_coarse_G_latest  --save_filename ./model/sgn_hd --scene_parsing_model_path ./sceneparsing/resnet34_dilated8/ --batch_size 8 --num_epoch 100 --isEnhancer
+python train_enhancer.py --img_root ./data/ADE20K_TA_Dataset/ --coarse_model ./model/sgn_coarse_G_latest  --save_filename ./model/sgn_hd --scene_parsing_model_path ./sceneparsing/resnet34_dilated8/ --batch_size 8 --num_epoch 100 --isEnhancer
 
 
 # Test Coarse Model
 
-python36 test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/SGN/sgn_coarse_G_latest --save_dir ./results
+python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/SGN/sgn_coarse_G_latest --save_dir ./results
 
 # Test Enhancer Model
 
-python36 test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/SGN/sgn_enhancer_G_latest --save_dir ./resultsHD --isEnhancer
+python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/SGN/sgn_enhancer_G_latest --save_dir ./resultsHD --isEnhancer
 
 
 # Interactive Scene Editing Demo
