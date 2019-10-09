@@ -6,8 +6,8 @@
   <b>Levent Karacan, Zeynep Akata, Aykut Erdem, Erkut Erdem</b></span>
 </p>
 
-This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ](#) (ACM Transactions on Graphics(2019))
-See our [website]([https://hucvl.github.io/attribute_hallucination/))  for more information about the model!
+This is the implementation of [ Manipulating Attributes of Natural Scenes via Hallucination ] (Accepted for publication in ACM Transactions on Graphics, 2019)
+See our [ website ] [ https://hucvl.github.io/attribute_hallucination/ ]  for more information about the model!
 
 <div align="center">
   <img src="https://hucvl.github.io/attribute_hallucination/images/teaser.jpg" style="float:left" width="100%">
@@ -30,7 +30,7 @@ month={},}
 
 
 ## Requirements
-- We tested code on python2.7 and python3.6
+- We tested our code on python2.7 and python3.6
 - See [`requirements.txt`](requirements.txt) for the required python packages and run `pip install -r requirements.txt` to install them.
 
 # Coarse Model Training
