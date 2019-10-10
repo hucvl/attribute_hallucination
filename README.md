@@ -33,7 +33,6 @@ month={},}
 ## Dataset
 
 - We arranged dataset from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transiet Attributes](http://transattr.cs.brown.edu/) datasets.
-- You can the download dataset from this [link](#)
 - For our work, we curated a new dataset, which we call ALS18K, using images and annotations from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transiet Attributes](http://transattr.cs.brown.edu/) datasets.
 - You can the download the ALS18K dataset from this [link](#)
 - Please refer to the project pages of the aforementioned works for more details.
