@@ -31,20 +31,14 @@ month={},}
 - You need to install Tkinter module to use interactive scene editing tool.
 
 ## Dataset
-<<<<<<< HEAD
+
 - We arranged dataset from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transiet Attributes](http://transattr.cs.brown.edu/) datasets.
 - You can the download dataset from this [link](#)
-- Please cite the following works if you use this dataset.
- - [Transient Attributes for High-Level Understanding and Editing of Outdoor Scenes](http://transattr.cs.brown.edu/)
- - [Scene Parsing through ADE20K Dataset](https://groups.csail.mit.edu/vision/datasets/ADE20K/)
-=======
 - For our work, we curated a new dataset, which we call ALS18K, using images and annotations from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transiet Attributes](http://transattr.cs.brown.edu/) datasets.
 - You can the download the ALS18K dataset from this [link](#)
 - Please refer to the project pages of the aforementioned works for more details.
   - Laffont et al., [Transient Attributes for High-Level Understanding and Editing of Outdoor Scenes](http://transattr.cs.brown.edu/), SIGGRAPH 2014
   - Zhou et al., [Scene Parsing through ADE20K Dataset](https://groups.csail.mit.edu/vision/datasets/ADE20K/), CVPR 2017
->>>>>>> 08df3c6f87456a4e92a2c26e1a91bbac693113a9
-
 
 ## Coarse Model Training
 
