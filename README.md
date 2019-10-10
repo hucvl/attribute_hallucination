@@ -70,10 +70,10 @@ python test.py --img_root ./data/ADE20K_TA_Dataset/ --model_path ./model/sgn_enh
 ## Interactive Scene Editing Demo
 - Install Tkinter module.
 - Photo style transfer and semantic segmentation codes taken directly from the following works and adapted to editing tool.
- - Zhou et al., [Scene Parsing through ADE20K Dataset](https://github.com/CSAILVision/semantic-segmentation-pytorch), CVPR 2017
- - Li et al., [A Closed-form Solution to Photorealistic Image Stylization](https://github.com/NVIDIA/FastPhotoStyle), ECCV 2018
- - Mechrez et al.,[Photorealistic Style Transfer with Screened Poisson Equation](https://github.com/roimehrez/photorealism),BMVC 2017
- - Yoo et al.,[Photorealistic Style Transfer via Wavelet Transforms](https://github.com/clovaai/WCT2), ICCV 2019
+  - Zhou et al., [Scene Parsing through ADE20K Dataset](https://github.com/CSAILVision/semantic-segmentation-pytorch), CVPR 2017
+  - Li et al., [A Closed-form Solution to Photorealistic Image Stylization](https://github.com/NVIDIA/FastPhotoStyle), ECCV 2018
+  - Mechrez et al.,[Photorealistic Style Transfer with Screened Poisson Equation](https://github.com/roimehrez/photorealism),BMVC 2017
+  - Yoo et al.,[Photorealistic Style Transfer via Wavelet Transforms](https://github.com/clovaai/WCT2), ICCV 2019
 - If you do not want to try the codes to adapt, you can download semantic_segmentation_pytorch, fastphoto, photorealism, WCT2 [link](https://drive.google.com/drive/folders/18E__lGg5V4x792RsI8xYeQbSMhQcE2FN?usp=sharing)
 - Place those codes under the editing_tool folder.
 
