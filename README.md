@@ -32,9 +32,9 @@ month={},}
 
 ## Dataset
 
-- We arranged dataset from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transiet Attributes](http://transattr.cs.brown.edu/) datasets.
-- For our work, we curated a new dataset, which we call ALS18K, using images and annotations from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transiet Attributes](http://transattr.cs.brown.edu/) datasets.
-- You can the download the ALS18K dataset from this [link](https://drive.google.com/drive/folders/1JWoswk9lIi7T7cvWZFsslDwUx-8m0wAk?usp=sharing)
+- We arranged dataset from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transient Attributes](http://transattr.cs.brown.edu/) datasets.
+- For our work, we curated a new dataset, which we call ALS18K, using images and annotations from [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) and [Transient Attributes](http://transattr.cs.brown.edu/) datasets.
+- You can download the ALS18K dataset from this [link](https://drive.google.com/drive/folders/1JWoswk9lIi7T7cvWZFsslDwUx-8m0wAk?usp=sharing)
 - Please refer to the project pages of the aforementioned works for more details.
   - Laffont et al., [Transient Attributes for High-Level Understanding and Editing of Outdoor Scenes](http://transattr.cs.brown.edu/), SIGGRAPH 2014
   - Zhou et al., [Scene Parsing through ADE20K Dataset](https://groups.csail.mit.edu/vision/datasets/ADE20K/), CVPR 2017
